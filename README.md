@@ -14,7 +14,7 @@ make install
 ./MegaFuse
 ```
 
-I can start it only from Megafuse and as not root user.
+I can start it only from MegaFuse directory and as not root user.
 To **autostart** it, add to ubuntu autostart command
 ```sh
 cd <megaFusePath>/MegaFuse && ./MegaFuse
