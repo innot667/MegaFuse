@@ -1,6 +1,26 @@
 MegaFuse
 ========
 
+### Easy start on ubuntu
+```sh
+sudo apt install libcrypto++-dev libcurl4-openssl-dev libdb5.3++-dev libfreeimage-dev libreadline-dev libfuse-dev
+cd ~
+git clone https://github.com/innot667/MegaFuse
+cd MegaFuse
+#set config
+nano megafuse.conf
+make
+make install
+./MegaFuse
+```
+
+I can start it only from Megafuse and as not root user.
+To **autostart** it, add to ubuntu autostart command
+```sh
+cd <megaFusePath>/MegaFuse && ./MegaFuse
+```
+---
+
 This is a linux client for the MEGA cloud storage provider.
 It is based on FUSE and it allows to mount the remote cloud drive on the local filesystem.
 Once mounted, all linux program will see the cloud drive as a normal folder.
